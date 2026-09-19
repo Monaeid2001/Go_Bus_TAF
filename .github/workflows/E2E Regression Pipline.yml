@@ -1,0 +1,65 @@
+name: E2E Regression
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+  schedule:
+    - cron: '00 22 * * *'
+  workflow_dispatch:
+
+jobs:
+  Chrome_Linux_Test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+      - name: setup java
+        uses: actions/setup-java@v5
+        with:
+          distribution: 'zulu'
+          java-version: '21'
+      - name: Set up Maven
+        uses: stCarolas/setup-maven@v5
+        with:
+          maven-version: 3.9.11
+      - name: Running Tests
+        continue-on-error: true
+        run: mvn -DexecutionType="LocalHeadless" -Dbrowser="Chrome" clean test
+      - name: Install Allure commandline
+        run: npm install -g allure-commandline --save-dev
+      - name: Generate Allure Report
+        run: allure generate test-output/allure-results --single-file --clean -o test-output/allure-report
+      - name: Upload Allure Report
+        uses: actions/upload-artifact@v7
+        with:
+          name: Chrome_Linux_AllureReport
+          path: "test-output/allure-report/"
+
+  Edge_Windows_Test:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+      - name: setup java
+        uses: actions/setup-java@v5
+        with:
+          distribution: 'zulu'
+          java-version: '21'
+      - name: Set up Maven
+        uses: stCarolas/setup-maven@v5
+        with:
+          maven-version: 3.9.11
+      - name: Running Tests
+        continue-on-error: true
+        run: mvn -DexecutionType="LocalHeadless" -Dbrowser="Edge" clean test
+      - name: Install Allure commandline
+        run: npm install -g allure-commandline --save-dev
+      - name: Generate Allure Report
+        run: allure generate test-output/allure-results --single-file --clean -o test-output/allure-report
+      - name: Upload Allure Report
+        uses: actions/upload-artifact@v7
+        with:
+          name: Edge_Windows_AllureReport
+          path: "test-output/allure-report/"

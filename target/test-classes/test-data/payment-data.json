@@ -1,0 +1,21 @@
+{
+  "email": "monaeid5858@gmail.com",
+  "password": "Mm@123456",
+  "busSearch": {
+    "departureCity": "Alexandria",
+    "departureStation": "Miamy",
+    "arrivalCity": "Cairo",
+    "arrivalStation": "Tahrir",
+    "travelMonthYear": "October 2026",
+    "travelDay": "15"
+  },
+  "card": {
+    "number": "5555 5555 5555 4444",
+    "name": "Tester",
+    "expiryMonth": "12",
+    "expiryYear": "2027",
+    "cvv": "123"
+  }
+}
+
+

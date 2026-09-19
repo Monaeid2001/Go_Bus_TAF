@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Surefire suite</th></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">15</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">87,669</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Tests.RegisterTest</td><td><a href="#m0">registerTest</a></td><td rowspan="1">1789833886573</td><td rowspan="1">12449</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">Tests.BusSearchResultsTest</td><td><a href="#m1">loginTest</a></td><td rowspan="1">1789833844842</td><td rowspan="1">4610</td></tr><tr class="passedeven"><td><a href="#m2">searchTripTest</a></td><td rowspan="1">1789833849941</td><td rowspan="1">2479</td></tr><tr class="passedodd"><td rowspan="4">Tests.CreditCardPaymentMethodTest</td><td><a href="#m3">creditCardPaymentMethodTest</a></td><td rowspan="1">1789833865159</td><td rowspan="1">5086</td></tr><tr class="passedodd"><td><a href="#m4">loginTest</a></td><td rowspan="1">1789833855084</td><td rowspan="1">4338</td></tr><tr class="passedodd"><td><a href="#m5">searchTripTest</a></td><td rowspan="1">1789833859717</td><td rowspan="1">1826</td></tr><tr class="passedodd"><td><a href="#m6">seatSelectionTest</a></td><td rowspan="1">1789833861925</td><td rowspan="1">3013</td></tr><tr class="passedeven"><td rowspan="2">Tests.LoginTest</td><td><a href="#m7">inValidLoginTest</a></td><td rowspan="1">1789833872937</td><td rowspan="1">4482</td></tr><tr class="passedeven"><td><a href="#m8">validLoginTest</a></td><td rowspan="1">1789833879786</td><td rowspan="1">4506</td></tr><tr class="passedodd"><td rowspan="3">Tests.SeatSelectionTest</td><td><a href="#m9">loginTest</a></td><td rowspan="1">1789833901269</td><td rowspan="1">5171</td></tr><tr class="passedodd"><td><a href="#m10">searchTripTest</a></td><td rowspan="1">1789833906760</td><td rowspan="1">2217</td></tr><tr class="passedodd"><td><a href="#m11">seatSelectionTest</a></td><td rowspan="1">1789833909443</td><td rowspan="1">2505</td></tr><tr class="passedeven"><td rowspan="4">Tests.WalletPaymentMethodTest</td><td><a href="#m12">loginTest</a></td><td rowspan="1">1789833916234</td><td rowspan="1">4844</td></tr><tr class="passedeven"><td><a href="#m13">searchTripTest</a></td><td rowspan="1">1789833921377</td><td rowspan="1">1831</td></tr><tr class="passedeven"><td><a href="#m14">seatSelectionTest</a></td><td rowspan="1">1789833923627</td><td rowspan="1">3481</td></tr><tr class="passedeven"><td><a href="#m15">walletPaymentMethodTest</a></td><td rowspan="1">1789833927300</td><td rowspan="1">1305</td></tr></tbody>
+</table>
+<h2>Surefire test</h2><h3 id="m0">Tests.RegisterTest#registerTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //a[text()=&apos;Register&apos;] to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&apos;Register&apos;]&quot;}.
+(tried for 10 seconds with 500 milliseconds interval)
+Build info: version: &apos;4.45.0&apos;, revision: &apos;cd6a3cd cd6a3cdfca6970f62e5bc8344109d0fe0e2af05e&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 153.0.8010.52, chrome: {chromedriverVersion: 153.0.8010.52 (78e5e45d4bb4..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63095}, goog:processID: 23104, networkConnectionEnabled: false, pageLoadStrategy: eager, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63095/devtoo..., se:cdpVersion: 153.0.8010.52, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 120ef062947e06dcf48463732ae88d03
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at utils.WaitUtils.waitForElementToBeClickable(WaitUtils.java:21)
+	at pages.LoginPage.clickRegisterBtn(LoginPage.java:37)
+	at Tests.RegisterTest.registerTest(RegisterTest.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Tests.BusSearchResultsTest#loginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Tests.BusSearchResultsTest#searchTripTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">Tests.CreditCardPaymentMethodTest#creditCardPaymentMethodTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">Tests.CreditCardPaymentMethodTest#loginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">Tests.CreditCardPaymentMethodTest#searchTripTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">Tests.CreditCardPaymentMethodTest#seatSelectionTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">Tests.LoginTest#inValidLoginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">Tests.LoginTest#validLoginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">Tests.SeatSelectionTest#loginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">Tests.SeatSelectionTest#searchTripTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">Tests.SeatSelectionTest#seatSelectionTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">Tests.WalletPaymentMethodTest#loginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">Tests.WalletPaymentMethodTest#searchTripTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">Tests.WalletPaymentMethodTest#seatSelectionTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">Tests.WalletPaymentMethodTest#walletPaymentMethodTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
