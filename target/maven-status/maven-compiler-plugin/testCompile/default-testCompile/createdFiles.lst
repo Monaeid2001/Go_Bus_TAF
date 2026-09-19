@@ -1,7 +1,0 @@
-Tests\RegisterTest.class
-Tests\WalletPaymentMethodTest.class
-Tests\SeatSelectionTest.class
-Tests\BusSearchResultsTest.class
-Tests\LoginTest.class
-Tests\BaseTest.class
-Tests\CreditCardPaymentMethodTest.class
