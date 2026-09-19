@@ -51,7 +51,7 @@ The project is designed to be modular and maintainable using the Page Object Mod
 1. Clone the repository:
 
 ```sh
-git clone YOUR_REPOSITORY_URL
+git clone https://github.com/Monaeid2001/Go_Bus_TAF
 ```
 
 2. Navigate to the project directory:
