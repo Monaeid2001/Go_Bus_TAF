@@ -8,8 +8,8 @@ The project is designed to be modular and maintainable using the Page Object Mod
 
 ## Repository Information
 
-* **Owner:** [Monaeid2001]
-* **Repository URL:** [Go-Bus Automation](YOUR_REPOSITORY_URL)
+* **Owner:** [Monaeid2001](https://github.com/Monaeid2001)
+* **Repository URL:** [Go-Bus Automation](https://github.com/Monaeid2001/Go_Bus_TAF)
 * **Primary Language:** Java
 
 ## 🚀 Features
