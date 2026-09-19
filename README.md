@@ -63,8 +63,7 @@ cd Go-Bus
 3. Install Maven dependencies:
 
 ```bash
-mvn clean install -DskipTests
-```
+mvn clean install  ```
 
 ### Run the Tests
 
